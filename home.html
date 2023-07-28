@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family:sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: gray;
+}
+#div{
+margin-top:50px;
+background-image:url("hbi.jpg");// BACKGROUND IMAGE
+background-repeat:no-repeat;
+background-size:cover;
+}
+#img{
+margin-top:60px;
+margin-left:460px;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*{
+box-sizing:border-box;
+}
+
+.column{
+float:left;
+width:33.33%;
+padding:5px;
+}
+.row::after{
+content:"";
+clear:both;
+display:table;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+<a href="home.html">Home</a>
+ <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Booking</a>
+<a href="availability.html">Availablity</a>
+
+  <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="feedback.html">Feedback</a>
+      <a href="Offers.html">Offers</a>
+      <a href="logout.html">Logout</a>
+    </div>
+  </div> 
+</div>
+<div id="div">
+<img src="l.png" height=200px weight=200px align=center id="img">
+<h4 style="text-align:left;font-family:Tahoma">ABOUT</h4>
+<h5 style="text-align:left;color:black">We Love To Serve You</h5>
+<pre style="font-family:Times-new-Roman;color:green">
+       The ELITE Hotel is a traditional and conventional hotel built in the 1950s offering traditional facilities. It is  sited on the 
+       seafront at a convenient location,which is close to its competition hotels and the main shopping center.Accessibility of the
+       hotel is high. It is less than 30 minutes from the nearest airport and supported by good road, rail and bus linking  to major 
+       cities.The ELITE Hotel is a establishment in which there are double rooms,single rooms and king bedded rooms,all includes private
+       bathroom. The rooms are of a good size,comfortable and with different decorative styles.At present,there is a large garden and
+       a small swimming pool in the hotel , parking  space with a capacity of 120 cars is also available.  On top of that, there is a 
+       restaurant which serves buffet for breakfast and lunch as well as a la carte for dinner. The lobby lounge area is fairly large 
+       which is suited to a business type of hotel.Consistent Standard of Excellence: We will consistently provide our guests with a 
+       superior quality product and make a conscious  daily effort to be better than our competition. Personalized Guest Service: We 
+       will meet the specific meet of each guest with a professional, friendly, prompt, courteous, and  enthusiastic , attitude from 
+       all staff all times.</pre></div>
+<br><br>
+<div class="row">
+<div class="column">
+<label for="room">Room</label>
+<img src="4.jpg" class="room" style="width:50%" ></div>
+<div class="column">
+<label for="swimming">Swimming Pool</label>
+<img src="05.jpg" class="swimming" style="width:50%"></div>
+<div class="column">
+<label for="dish">Exotic Dishes</label>
+<img src="food.jpg" class="dish" style="width:50%" ></div></div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ELITE Hotels Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-image:url("h.avif");//BACKGROUND 
+background-repeat:no-repeat;
+background-position:fixed;
+background-size:cover;
+background-position:center center;
+}
+form {border: 1px solid white;
+margin-top:20px;
+margin-left:10px;
+width:300px;
+overflow:hidden;
+margin:10 0 0 400px;
+padding:20px;
+border-radius:0.5px; 
+text-align:center;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+background-color:none;
+}
+
+button {
+  border-color:white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+label{
+color:white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:none;
+  border-color:white;
+}
+.container {
+  padding: 16px;
+background-color:none;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<h4 style="text-align:center;font-family:Tahoma;color:white">ELITE HOTEL</h4>
+<h5 style="text-align:center;color:white">Login Form</h5>
+<center>
+<form action="/login" method="post">
+  <div class="container">
+    <label for="name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>   
+    <button type="submit"><a href="home.html" style="color:black">LOGIN</a></button>
+  </div>
+
+  <div class="container">
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="password.html">password?</a></span>
+  </div>
+</form>
+<h5 style="color:white">OR</h5>
+<button style="width:100px"><a href="sign.html"><b>Sign Up</b></a></button>
+</center>
+</html>

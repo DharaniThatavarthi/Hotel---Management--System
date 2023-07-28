@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+background-image:url("10.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  button-color:green;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Feedback</h1>
+<p>Please, let us know your suggestions to give our service to you the best.....</p>
+
+<div class="container">
+  <form action="/feedback" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="name">Name:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="name" name="name" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="phone">Contact Number:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="phone" name="phone" placeholder="Your contact number..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="feedback">Feedback!!!</label>
+    </div>
+    <div class="col-75">
+      <textarea id="feedback" name="feedback" placeholder="Write your feedback.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <button type="submit"><a href="received.html" style="color:black">submit</a></button>
+  </div>
+  </form>
+</div>
+
+</body>
+</html>
